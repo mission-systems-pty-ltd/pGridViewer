@@ -1,0 +1,11 @@
+//------------------------------------------------
+// pGridViewer config block
+
+ProcessConfig = pGridViewer
+{
+   BODY_FRAME   = false
+   RESOLUTION   = 0.05f
+   POINT_SIZE   = 1
+   FOV_DEG      = 90.0
+   AUTO_LEVEL   = true
+}
