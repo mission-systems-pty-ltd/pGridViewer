@@ -18,7 +18,7 @@ GridViewer::GridViewer()
 {
   m_iterations = 0;
   m_timewarp   = 1;
-  m_body_frame = false;
+  m_lidar_frame = false;
   m_point_size = 1;
   m_resolution = 1.0f;
   m_display_depth = 0;
@@ -321,11 +321,11 @@ bool GridViewer::OnStartUp()
       double dval  = atof(value.c_str());
       bool   bval  = (strcasecmp (value.c_str(), "TRUE") == 0 || dval != 0);
 
-      if (param == "BODY_FRAME") {
+      if (param == "LIDAR_FRAME") {
 
-        // TO DO: Handle incoming data in body-frame
-        cout << "BODY_FRAME = " << bval << endl;
-        m_body_frame = bval;
+        // TO DO: Handle incoming data in lidar-frame
+        cout << "LIDAR_FRAME = " << bval << endl;
+        m_lidar_frame = bval;
       }
       else if (param == "RESOLUTION") {
         cout << "RESOLUTION = " << dval << endl;

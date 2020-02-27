@@ -27,7 +27,7 @@ class GridViewer : public CMOOSApp
    // Max simultaneous point clouds
    float m_altitude;
    float m_resolution;
-   bool m_body_frame;
+   bool m_lidar_frame;
    bool m_auto_level;
    int m_point_size;
    int m_display_depth;
