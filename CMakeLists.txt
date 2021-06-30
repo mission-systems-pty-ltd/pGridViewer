@@ -3,6 +3,7 @@
 # Author(s): David Battle
 #--------------------------------------------------------
 cmake_minimum_required(VERSION 3.5)
+project(pGridViewer)
 
 SET(EXEC_NAME pGridViewer)
 
